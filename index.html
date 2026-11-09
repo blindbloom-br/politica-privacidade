@@ -127,6 +127,7 @@
       <tr><td>E-mail</td><td>Login (código de acesso por e-mail, sem senha) e comunicação sobre sua conta</td><td>Não</td></tr>
       <tr><td>Telefone</td><td>Verificação de identidade</td><td>Não</td></tr>
       <tr><td>Data de nascimento</td><td>Confirmar que você tem 18 anos ou mais</td><td>Não</td></tr>
+      <tr><td>CEP da residência (sem rua nem número)</td><td>Saber de quais regiões vêm nossos usuários (estatística interna) e, futuramente, aproximar pessoas da mesma região na descoberta. A partir do CEP guardamos também o estado e a cidade. Nenhum outro usuário vê seu CEP, cidade ou estado</td><td>Não</td></tr>
       <tr><td>Gênero</td><td>Funcionamento da mecânica de descoberta (o app conecta pessoas de gêneros opostos)</td><td>Não</td></tr>
       <tr><td>Foto do rosto</td><td>O pilar do produto: sua foto fica em sigilo (exibida só em mosaico) até a revelação, na última semana da sua conexão exclusiva</td><td>Sim (dado biométrico/imagem de rosto)</td></tr>
       <tr><td>Respostas do questionário</td><td>Coração da experiência — é como outros usuários te conhecem antes de ver seu rosto</td><td>Pode incluir dados sensíveis se você optar por compartilhar (ex. convicções religiosas, que você já compartilha por natureza do app)</td></tr>
@@ -156,6 +157,7 @@
     <li><strong>OpenAI</strong> (inteligência artificial usada para segurança e compatibilidade): analisa automaticamente sua foto de rosto e as fotos do Cofre de Memórias (para barrar nudez, violência, contato escrito na imagem ou foto que não seja sua), o texto das suas mensagens e a transcrição dos seus áudios (para barrar conteúdo abusivo), e as respostas do questionário (para moderação e para gerar o resumo de personalidade e a porcentagem de compatibilidade com o seu match). O conteúdo é enviado só no momento da análise, e a OpenAI não o usa para treinar seus modelos, conforme os termos do serviço de API.</li>
     <li><strong>Render</strong> (hospedagem do nosso servidor, que recebe sua foto no cadastro para gerar a versão em mosaico e enviá-la à análise de segurança).</li>
     <li><strong>Google / Firebase Cloud Messaging</strong> (entrega das notificações push no Android — recebe o token do seu dispositivo e o conteúdo da notificação, só no momento do envio).</li>
+    <li><strong>ViaCEP</strong> (consulta pública de CEP): no cadastro, o app envia só o número do CEP para mostrar a cidade correspondente e você confirmar. Nenhum outro dado seu acompanha essa consulta.</li>
     <li>Autoridades, quando exigido por lei ou ordem judicial.</li>
   </ul>
   <p>Seus dados de contato e documentos (CPF, telefone, e-mail) e sua foto de rosto <strong>nunca são compartilhados com outros usuários</strong> fora das regras descritas nos Termos de Uso (ex. a revelação da foto ao seu match, na última semana da conexão).</p>
