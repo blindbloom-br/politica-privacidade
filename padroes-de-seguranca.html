@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padrões de segurança infantil — BlindBloom</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9f6;
+    --text: rgba(20, 20, 19, 0.88);
+    --muted: rgba(20, 20, 19, 0.62);
+    --fill: rgba(0, 0, 0, 0.035);
+    --fill-strong: rgba(0, 0, 0, 0.06);
+    --rule: rgba(0, 0, 0, 0.1);
+    --gold: #9c7e2e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0d0a;
+      --text: rgba(255, 255, 255, 0.88);
+      --muted: rgba(255, 255, 255, 0.6);
+      --fill: rgba(255, 255, 255, 0.05);
+      --fill-strong: rgba(255, 255, 255, 0.08);
+      --rule: rgba(255, 255, 255, 0.14);
+      --gold: #c9a84c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  .brand {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 12px;
+  }
+  h1 {
+    font-size: 1.6em;
+    margin: 0 0 6px;
+    line-height: 1.25;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.92em;
+    margin: 0;
+  }
+  .doc-nav {
+    margin: 14px 0 0;
+    font-size: 0.92em;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin: 32px 0 10px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, ul, table { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--gold); }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+    font-size: 0.94em;
+  }
+  th, td {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--fill-strong);
+    font-weight: 600;
+  }
+  td { background: var(--fill); }
+  th:first-child, td:first-child { border-radius: 6px 0 0 6px; }
+  th:last-child, td:last-child { border-radius: 0 6px 6px 0; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">BlindBloom</p>
+    <h1>Padrões de segurança infantil</h1>
+    <p class="updated"><em>Última atualização: 19 de novembro de 2026</em></p>
+    <p class="doc-nav">Veja também a <a href="./index.html">Política de Privacidade</a>, os <a href="./termos.html">Termos de Uso e Conduta</a> e <a href="./excluir-conta.html">como excluir sua conta</a>.</p>
+  </header>
+
+  <p>O BlindBloom é um aplicativo de relacionamento cristão <strong>exclusivo para maiores de 18 anos</strong>, operado por Karina Alves de Oliveira Ltda (CNPJ 68.310.647/0001-53). Temos <strong>tolerância zero</strong> com o abuso e a exploração sexual infantil (CSAE) e com qualquer material de abuso sexual infantil (CSAM).</p>
+
+  <h2>O que é proibido</h2>
+  <p>É proibido, em qualquer parte do BlindBloom (perfil, respostas, mensagens, áudios e fotos):</p>
+  <ul>
+    <li>criar, enviar, pedir ou compartilhar qualquer conteúdo que sexualize crianças ou adolescentes, inclusive desenhos, montagens e imagens geradas por inteligência artificial;</li>
+    <li>aliciar, seduzir ou tentar contato com menores de idade (<em>grooming</em>);</li>
+    <li>usar o app para chantagem, extorsão sexual (<em>sextorsão</em>) ou tráfico de pessoas;</li>
+    <li>criar conta sendo menor de 18 anos, ou criar conta para outra pessoa.</li>
+  </ul>
+
+  <h2>Como prevenimos</h2>
+  <ul>
+    <li><strong>Só maiores de 18 anos:</strong> no cadastro pedimos a data de nascimento e o CPF, e o app recusa quem tem menos de 18 anos.</li>
+    <li><strong>Moderação automática:</strong> mensagens, áudios e fotos passam por moderação por inteligência artificial antes de ficarem visíveis para a outra pessoa. Conteúdo suspeito é bloqueado e vai para análise da equipe.</li>
+    <li><strong>Fotos protegidas:</strong> o rosto fica em mosaico e só é revelado dentro de uma conexão exclusiva entre dois adultos; a tela da sala bloqueia print e gravação.</li>
+  </ul>
+
+  <h2>Como denunciar dentro do app</h2>
+  <ul>
+    <li>Na <strong>Descoberta</strong>, toque no ícone de bandeira do perfil para denunciar.</li>
+    <li>Na <strong>Sala</strong>, abra o menu (⋮) e toque em <strong>Denunciar</strong>. Ao denunciar, a pessoa é <strong>bloqueada na hora</strong> e a conversa é encerrada.</li>
+    <li>Fora do app, escreva para <a href="mailto:seguranca@blindbloom.com.br">seguranca@blindbloom.com.br</a> ou <a href="mailto:suporte@blindbloom.com.br">suporte@blindbloom.com.br</a>.</li>
+  </ul>
+
+  <h2>O que fazemos quando recebemos uma denúncia</h2>
+  <ul>
+    <li>Analisamos com prioridade máxima, removemos o conteúdo e <strong>banimos a conta</strong> de forma permanente, impedindo novo cadastro com o mesmo CPF.</li>
+    <li>Preservamos as informações necessárias para a investigação e <strong>comunicamos às autoridades competentes</strong>: Polícia Federal, Ministério Público e a <a href="https://new.safernet.org.br/denuncie">Central de Denúncias da SaferNet Brasil</a>, conforme o Estatuto da Criança e do Adolescente (Lei 8.069/1990) e o Marco Civil da Internet (Lei 12.965/2014).</li>
+    <li>Cooperamos com pedidos de autoridades e cumprimos todas as leis de proteção à criança e ao adolescente aplicáveis.</li>
+  </ul>
+
+  <h2>Se uma criança estiver em perigo agora</h2>
+  <p>Ligue <strong>190</strong> (Polícia Militar) ou <strong>Disque 100</strong> (Direitos Humanos, gratuito, 24 horas). Denúncias de conteúdo na internet também podem ser feitas em <a href="https://new.safernet.org.br/denuncie">new.safernet.org.br/denuncie</a>.</p>
+
+  <h2>Contato responsável</h2>
+  <p>Responsável pela segurança infantil no BlindBloom: Karina Alves de Oliveira — <a href="mailto:seguranca@blindbloom.com.br">seguranca@blindbloom.com.br</a>.</p>
+
+  <footer>
+    Dúvidas: <a href="mailto:suporte@blindbloom.com.br">suporte@blindbloom.com.br</a>
+  </footer>
+</main>
+</body>
+</html>
